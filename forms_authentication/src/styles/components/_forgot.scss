@@ -1,0 +1,12 @@
+@use "../variables" as v;
+
+@mixin forgot() {
+  .forgot {
+    font-family: v.$font_family;
+    font-weight: 500;
+    color: v.$gray;
+    font-size: 0.8rem;
+    text-align: center;
+    cursor: pointer;
+  }
+}

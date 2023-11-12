@@ -1,0 +1,59 @@
+// Fonts
+$font_family: "Fira Sans", sans-serif;
+
+// Colors
+$white: #fff;
+$gray: #525252;
+$error: #dc3d52;
+
+// Background-bg:
+$container_bg: linear-gradient(
+  to right top,
+  #cb7484,
+  #ce6c7f,
+  #d0647a,
+  #d35b76,
+  #d55171,
+  #d64c6d,
+  #d84769,
+  #d94165,
+  #da4060,
+  #db3f5c,
+  #dc3e57,
+  #dc3d52
+);
+
+$main_bg: linear-gradient(
+  to left bottom,
+  #cb7484,
+  #ce6c7f,
+  #d0647a,
+  #d35b76,
+  #d55171,
+  #d64c6d,
+  #d84769,
+  #d94165,
+  #da4060,
+  #db3f5c,
+  #dc3e57,
+  #dc3d52
+);
+
+$button-bg: radial-gradient(
+  circle,
+  #cb7484,
+  #ce6c7f,
+  #d0647a,
+  #d35b76,
+  #d55171,
+  #d64c6d,
+  #d84769,
+  #d94165,
+  #da4060,
+  #db3f5c,
+  #dc3e57,
+  #dc3d52
+);
+
+// Shadows
+$main_shadow: box-shadow rgba(0, 0, 0, 0.35) 0px 5px 15px;

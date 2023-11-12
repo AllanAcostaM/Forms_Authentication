@@ -1,0 +1,24 @@
+@use "../variables" as v;
+
+@mixin button() {
+  button {
+    background-image: v.$main_bg;
+    color: v.$white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-family: v.$font_family;
+    font-size: 0.7rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    border-radius: 100px;
+    justify-content: center;
+    margin: 20px 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-image: v.$button-bg;
+      box-shadow: v.$main_shadow;
+    }
+  }
+}
