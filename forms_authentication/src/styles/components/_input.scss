@@ -1,7 +1,7 @@
 @use "../variables" as v;
 
 @mixin input() {
-  input [type="text"],
+  input[type="text"],
   input[type="email"],
   input[type="password"],
   select {
@@ -11,5 +11,6 @@
     border-bottom: 1px solid v.$gray;
     outline: none;
     padding: 0.2rem 0;
+    color: v.$gray;
   }
 }

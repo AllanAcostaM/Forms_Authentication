@@ -5,7 +5,7 @@ import SingUp from "./components/SingUp";
 import ForgotPassword from "./components/ForgotPassword";
 
 const App = () => {
-  const [step, setstep] = useState("singin");
+  const [step, setstep] = useState("singup");
 
   return (
     <div className="container">

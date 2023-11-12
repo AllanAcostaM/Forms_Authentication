@@ -1,9 +1,9 @@
 const SingIn = () => {
   return (
     <main>
-      <h3>Sing In</h3>
+      <h3>Hello, friend!</h3>
       <div className="card">
-        <form autoComplete="on">
+        <form autoComplete="off">
           <fieldset>
             <label htmlFor="email">email</label>
             <input type="email" id="email" autoFocus />
