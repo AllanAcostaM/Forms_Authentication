@@ -3,7 +3,7 @@ const SingUp = () => {
     <main>
       <h3>Welcome, join us!</h3>
       <div className="card">
-        <form autoComplete="off">
+        <orm autoComplete="off">
           <fieldset>
             <label htmlFor="fullName">Full name</label>
             <input type="text" id="fullName" />
@@ -41,7 +41,7 @@ const SingUp = () => {
             <p className="error error_terms">required</p>
           </fieldset>
           <button type="submit">Register</button>
-        </form>
+        </orm>
       </div>
       <p>
         Already have an account? <span>Sing In</span>
