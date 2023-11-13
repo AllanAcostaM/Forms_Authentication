@@ -1,9 +1,13 @@
+import { useContext } from "react";
+import AuthContext from "../context/AuthContext";
+
 const SingUp = () => {
+  let { setStep } = useContext(AuthContext);
   return (
     <main>
       <h3>Welcome, join us!</h3>
       <div className="card">
-        <orm autoComplete="off">
+        <form autoComplete="off">
           <fieldset>
             <label htmlFor="fullName">Full name</label>
             <input type="text" id="fullName" />
@@ -41,10 +45,11 @@ const SingUp = () => {
             <p className="error error_terms">required</p>
           </fieldset>
           <button type="submit">Register</button>
-        </orm>
+        </form>
       </div>
       <p>
-        Already have an account? <span>Sing In</span>
+        Already have an account?{" "}
+        <span onClick={() => setStep("signin")}>Sign Up</span>
       </p>
     </main>
   );
