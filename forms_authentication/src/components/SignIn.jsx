@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import AuthContext from "../context/AuthContext";
 
-import InputPassword from "./InputPassword";
+// import InputPassword from "./InputPassword";
 
 const SingIn = () => {
   let { setStep } = useContext(AuthContext);
@@ -10,11 +10,18 @@ const SingIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const handlerSubmit = (e) => {
+    // Evita el envío de datos a un backend
+    e.preventDefault();
+    console.log("Sending data to backend...");
+    console.log(`El usuario digitó: ${email} y ${password}`);
+  };
+
   return (
     <main>
       <h3>Hello, friend!</h3>
       <div className="card">
-        <form autoComplete="off">
+        <form onSubmit={handlerSubmit} autoComplete="off">
           <fieldset>
             <label htmlFor="email">email</label>
             <input
@@ -22,12 +29,13 @@ const SingIn = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               id="email"
+              autoFocus
             />
             <p className="error">Valid email required</p>
           </fieldset>
           <fieldset>
             <label htmlFor="password">password</label>
-            <InputPassword />
+            {/*<InputPassword />*/}
             <input
               type="password"
               value={password}
