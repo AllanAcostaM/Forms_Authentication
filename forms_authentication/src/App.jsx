@@ -1,17 +1,17 @@
 import { useState } from "react";
 import AuthContext from "./context/AuthContext";
 
-import SingIn from "./components/SingIn";
-import SingUp from "./components/SingUp";
+import SignIn from "./components/SignIn";
+import SingUp from "./components/SignUp";
 import ForgotPassword from "./components/ForgotPassword";
 
 const App = () => {
-  const [step, setStep] = useState("signin");
+  const [step, setStep] = useState("forgot");
 
   return (
     <AuthContext.Provider value={{ step, setStep }}>
       <div className="container">
-        {step === "signin" && <SingIn />}
+        {step === "signin" && <SignIn />}
         {step === "signup" && <SingUp />}
         {step === "forgot" && <ForgotPassword />}
       </div>
