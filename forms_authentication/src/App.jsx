@@ -6,7 +6,7 @@ import SingUp from "./components/SignUp";
 import ForgotPassword from "./components/ForgotPassword";
 
 const App = () => {
-  const [step, setStep] = useState("forgot");
+  const [step, setStep] = useState("signup");
 
   return (
     <AuthContext.Provider value={{ step, setStep }}>

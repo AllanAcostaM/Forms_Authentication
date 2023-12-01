@@ -39,8 +39,8 @@ const ForgotPassword = () => {
         </form>
       </div>
       <p>
-        Already have an account?
-        <span onClick={() => setStep("signin")}> Sing In </span>
+        Already have an account?{" "}
+        <span onClick={() => setStep("signin")}>Sing In</span>
       </p>
     </main>
   );

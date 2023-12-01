@@ -8,10 +8,6 @@
     text-align: right;
     margin-top: 0.3rem;
     display: none;
-
-    &_terms {
-      text-align: left;
-    }
   }
   .error_message {
     color: v.$error;
@@ -19,5 +15,8 @@
     font-size: 0.8rem;
     text-align: right;
     margin-top: 0.3rem;
+    &_terms {
+      text-align: left;
+    }
   }
 }
